@@ -1,7 +1,7 @@
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 1px;
   box-sizing: border-box;
   list-style: none;
 }
@@ -624,7 +624,8 @@ section {
 /*Independed components*/
 .btn-con {
   display: flex;
-  align-self: flex-start;
+  align-self: center;
+  margin: 10px auto;
 }
 
 .main-btn {
@@ -706,7 +707,9 @@ section {
     width: 50px;
     height: 50px;
   }
-
+   .mobile_none{
+    display: none;
+   }
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
@@ -715,11 +718,15 @@ section {
   .left-header .h-shape {
     display: none;
   }
+  .header-content .left-header{
+    position: absolute;
+    top: 50px;
+    opacity: 0.5;
+  }
 
   .right-header {
     grid-row: 1;
-    padding-right: 0rem !important;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .right-header .name {
