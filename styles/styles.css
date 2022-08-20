@@ -6,6 +6,10 @@
   list-style: none;
 }
 
+.project_desc{
+  text-align: justify;
+  padding: 5px;
+}
 :root {
   --color-primary: #191d2b;
   --color-secondary: #2ac9db;
