@@ -4,556 +4,361 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio:Rupesh</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Rupesh Kumar — Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="main-content">
-    <header class="container header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/rupesh.jpeg" alt="" height="50vh">
+
+    <!-- ── SIDE NAV ── -->
+    <nav class="side-nav">
+        <div class="nav-logo">RK</div>
+        <ul class="nav-links">
+            <li><button class="control active-btn" data-id="home" title="Home"><i class="fas fa-house"></i><span class="nav-label">Home</span></button></li>
+            <li><button class="control" data-id="about" title="About"><i class="fas fa-user"></i><span class="nav-label">About</span></button></li>
+            <li><button class="control" data-id="portfolio" title="Portfolio"><i class="fas fa-briefcase"></i><span class="nav-label">Work</span></button></li>
+            <li><button class="control" data-id="contact" title="Contact"><i class="fas fa-envelope"></i><span class="nav-label">Contact</span></button></li>
+        </ul>
+        <button class="theme-btn" title="Toggle theme"><i class="fas fa-circle-half-stroke"></i></button>
+    </nav>
+
+    <!-- ── HOME ── -->
+    <header class="page container active" id="home">
+        <div class="hero-bg">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
+        </div>
+        <div class="hero-content">
+            <div class="hero-image-wrap">
+                <div class="hero-ring"></div>
+                <div class="hero-img">
+                    <img src="img/rupesh.jpeg" alt="Rupesh Kumar">
                 </div>
             </div>
-            <div class="right-header">
-                <h2 class="name">
-                    Hi, I'm </br><span>RUPESH KUMAR.</span>
-                    <br> Full Stack Developer.
-                </h2>
-                <div class="btn-con">
-                    <a href="img/rupesh_cv.pdf" target="_blank" class="main-btn">
-                        <span class="btn-text">Download CV</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Rupesh<br><span>Kumar.</span></h1>
+                <p class="hero-role"><i class="fas fa-code"></i> Full Stack Developer (SDE-2)</p>
+                <p class="hero-tagline">4+ years of crafting scalable web applications — from e-commerce to enterprise ERPs.</p>
+                <div class="hero-cta">
+                    <a href="img/Rupesh_CV.pdf" target="_blank" class="btn-primary">
+                        <i class="fas fa-download"></i> Download CV
                     </a>
+                    <button class="btn-ghost control" data-id="contact">
+                        Let's Talk <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/rupesh9661" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rupesh-kumar-478618208/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/RkyRupesh1" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rkyyadavrupesh/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
-            </div>
-            <div>
-                <div class="left-about">
-                    <p>
-                        I am a Software Engineer having 4 years of industrial experience in full stack web development, using HTML, CSS, JavaScript, PHP, Laravel, React, Sql, Mysql Node.js, Express.js, Docker and Aws. I developed multiple dynamic full stack applications like e-commerce softwares, school management ERP, lead managment system, loan & finance mangement erp etc. I also worked with various third-party APIs, such as payment gateways, Google and Facebook login, Google map, and shipping APIs. I also handled hosting and server management, and connected auto and multiple deploy on cPanel with GitHub. I am very keen to learn new technologies and methodologies. My goal is to become an expert full stack developer. </p>
-                </div>
-            </div>
-            <div class="about-container">
-                <div class="left-about">
-                    <div class="btn-con">
-                        <a href="img/rupesh_cv.pdf" target="_blank" class="main-btn">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">10+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">4</p>
-                            <p class="small-text">Years of <br /> experience</p>
-                        </div>
-                    </div>
-                </div>
+
+    <!-- ── ABOUT ── -->
+    <section class="page container" id="about">
+        <div class="section-header">
+            <span class="section-tag">Get to know me</span>
+            <h2 class="section-title">About <span>Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-bio">
+                <p>I am a Software Engineer with <strong>4+ years of industrial experience</strong> in full stack web development, using HTML, CSS, JavaScript, PHP, Laravel, React, SQL, MySQL, Node.js, Express.js, Docker, and AWS.</p>
+                <p>I have built multiple dynamic full stack applications — e-commerce platforms, school management ERPs, lead management systems, and loan & finance management ERPs. I've integrated third-party APIs such as payment gateways, Google/Facebook login, Google Maps, and shipping APIs, and I also handled hosting, server management, and CI/CD via cPanel with GitHub.</p>
+                <a href="img/Rupesh_CV.pdf" target="_blank" class="btn-primary" style="margin-top:1.5rem">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
             </div>
             <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">Html</p>
-                        <div class="progress-con">
-                            <p class="prog-text">90%</p>
-                            <div class="progress">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Css</p>
-                        <div class="progress-con">
-                            <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Bootstrap</p>
-                        <div class="progress-con">
-                            <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Javascript</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Typescript</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">React.js</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Php</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Laravel</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                      <div class="progress-bar">
-                        <p class="prog-title">Mysql</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Jquery</p>
-                        <div class="progress-con">
-                            <p class="prog-text">30%</p>
-                            <div class="progress">
-                                <span class="python"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Ajax</p>
-                        <div class="progress-con">
-                            <p class="prog-text">30%</p>
-                            <div class="progress">
-                                <span class="python"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Node.js</p>
-                        <div class="progress-con">
-                            <p class="prog-text">30%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Git</p>
-                        <div class="progress-con">
-                            <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Docker</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Aws</p>
-                        <div class="progress-con">
-                            <p class="prog-text">30%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">BDD</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="stat-card">
+                    <span class="stat-num">15<sup>+</sup></span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">4<sup>+</sup></span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">5<sup>+</sup></span>
+                    <span class="stat-label">Companies Worked</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">10<sup>+</sup></span>
+                    <span class="stat-label">Tech Stack</span>
                 </div>
             </div>
-            <h4 class="stat-title">My Timeline</h4>
-            <div class="timeline">
-                 <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">March 2024 - Present</p>
-                    <h5>Software Engineer<span> - Planetcast Media Services Limited</span></h5>
-                  
-                </div>
-                 <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">January 2023 - December 2023</p>
-                    <h5>Software Engineer<span> -Akshamaala Solutions Pvt. Ltd. (Unnati) </span></h5>
-                  
-                </div>
-                 <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">December 2021 - January 2023</p>
-                    <h5>Backend Developer<span> - Pythonist India Pvt. Ltd.</span></h5>
-                  
-                </div>
-                  <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2023 - 2025</p>
-                    <h5>Master In Computer Application ( MCA & 6.95 CGPA)<span> - Chandigarh University </span></h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2020 - 2023</p>
-                    <h5>B.voc Software Development (Bachelor & 7.99 CGPA)<span> - RAMANUJAN COLLEGE , DU</span></h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2017 - 2019</p>
-                    <h5>Intermediate (PCM & 86.8%) <span> - L.S. COLLEGE </span></h5>
-                </div>
-              
-            </div>
-        </section>
-        <section class="container" id="portfolio">
-            <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
-            </div>
-            <p class="port-text">
-               
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/mm.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Details</h3>
-                         <p class="project_desc">Media Manager ( A Video Content Management System) <br> Tech used: Typescript, laravel, Mysql, Docker, rest apis, third party apis, gitlab</p>   
-                         <div class="icons">
-                            
-                            <a href="https://media-manager.demo.switch.tv/" target="_blank" class="icon">
-                                <i class="fas fa-link"></i>
-                            </a>
-                        </div>
-                        </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/orafinance.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Details</h3>
-                         <p class="project_desc">Ora Finance ( A NBFC like bajaj finance) Erp. <br> Tech used: php, ajax, JavaScript, laravel, rest apis, third party apis, gitlab</p>   
-                         <div class="icons">
-                            
-                            <a href="https://los.orafinance.in" target="_blank" class="icon">
-                                <i class="fas fa-link"></i>
-                            </a>
-                        </div>
-                        </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/unnati.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Details</h3>
-                         <p class="project_desc">Unnati Erp ( An agritech Software) <br> Tech used: php, ajax, JavaScript, laravel, rest apis, third party apis, gitlab</p>   
-                         <div class="icons">
-                            
-                            <a href="https://unnati.world/shop/admin/index.php?route=common/login" target="_blank" class="icon">
-                                <i class="fas fa-link"></i>
-                            </a>
-                        </div>
-                        </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/megamart.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <p class="project_desc">Megamart :- A Full Stack Ecommerce Project. <br> Tech used: php, ajax,JavaScript, laravel,third party apis, github</p>
-                        <div class="icons">
-                            
-                            <a href="https://megamart.pythonistindia.com" target="_blank" class="icon">
-                                <i class="fas fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/aitech.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <p class="project_desc">Aitech :- A Multivendor Ecommerce Project having admin, seller and user dashboard. <br> Tech used: JavaScript, node.js, express.js, jwt,third party apis, github</p>
-                        <div class="icons">
-                            
-                            <a href="https://aitech.com.sa" target="_blank" class="icon">
-                                <i class="fas fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/royaltechno.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <p class="project_desc">RoyalTechno School Erp :- An Erp having student, teacher, fee & expense management Modules. <br> Tech used: php, ajax,JavaScript, laravel, github</p>
-                        <div class="icons">
-                            
-                            <a href="https://admin.royaltechnoschool.com" target="_blank" class="icon">
-                                <i class="fas fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        </div>
 
+        <div class="skills-section">
+            <h3 class="sub-title">Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item"><span class="skill-name">HTML</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div><span class="skill-pct">90%</span></div>
+                <div class="skill-item"><span class="skill-name">CSS</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div><span class="skill-pct">70%</span></div>
+                <div class="skill-item"><span class="skill-name">Bootstrap</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div><span class="skill-pct">70%</span></div>
+                <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div><span class="skill-pct">75%</span></div>
+                <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar"><div class="skill-fill" style="--w:50%"></div></div><span class="skill-pct">50%</span></div>
+                <div class="skill-item"><span class="skill-name">React.js</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div><span class="skill-pct">75%</span></div>
+                <div class="skill-item"><span class="skill-name">PHP</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-pct">80%</span></div>
+                <div class="skill-item"><span class="skill-name">Laravel</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-pct">80%</span></div>
+                <div class="skill-item"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-pct">80%</span></div>
+                <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" style="--w:50%"></div></div><span class="skill-pct">50%</span></div>
+                <div class="skill-item"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" style="--w:30%"></div></div><span class="skill-pct">30%</span></div>
+                <div class="skill-item"><span class="skill-name">jQuery/AJAX</span><div class="skill-bar"><div class="skill-fill" style="--w:30%"></div></div><span class="skill-pct">30%</span></div>
+                <div class="skill-item"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div><span class="skill-pct">70%</span></div>
+                <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" style="--w:50%"></div></div><span class="skill-pct">50%</span></div>
+                <div class="skill-item"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-fill" style="--w:30%"></div></div><span class="skill-pct">30%</span></div>
+                <div class="skill-item"><span class="skill-name">BDD</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-pct">80%</span></div>
+            </div>
+        </div>
 
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/bajar247.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <p class="project_desc">Bajar247 A Multivendor Ecommerce Project Like Amazon<br> Tech used: html,css,JavaScript, github, Laravel</p>
-                        <div class="icons">
-                            <a href="https://bajar247.com/" target="_blank" class="icon">
-                                <i class="fas fa-link"></i>
-                            </a>
-                         
-                        </div>
-                    </div>
+        <div class="timeline-section">
+            <h3 class="sub-title">Experience &amp; Education</h3>
+            <div class="timeline-grid">
+                <div class="tl-card">
+                    <div class="tl-badge"><i class="fas fa-briefcase"></i></div>
+                    <p class="tl-date">Dec 2025 – Present</p>
+                    <h4>Software Development Engineer - 2</h4>
+                    <p class="tl-company">Cloudesign Technology Services Limited</p>
                 </div>
+                <div class="tl-card">
+                    <div class="tl-badge"><i class="fas fa-briefcase"></i></div>
+                    <p class="tl-date">March 2024 – Nov 2025</p>
+                    <h4>Software Engineer</h4>
+                    <p class="tl-company">Planetcast Media Services Limited</p>
+                </div>
+                <div class="tl-card">
+                    <div class="tl-badge"><i class="fas fa-briefcase"></i></div>
+                    <p class="tl-date">January 2023 – December 2023</p>
+                    <h4>Software Engineer</h4>
+                    <p class="tl-company">Akshamaala Solutions Pvt. Ltd. (Unnati)</p>
+                </div>
+                <div class="tl-card">
+                    <div class="tl-badge"><i class="fas fa-briefcase"></i></div>
+                    <p class="tl-date">December 2021 – January 2023</p>
+                    <h4>Backend Developer</h4>
+                    <p class="tl-company">Pythonist India Pvt. Ltd.</p>
+                </div>
+                <div class="tl-card edu">
+                    <div class="tl-badge"><i class="fas fa-graduation-cap"></i></div>
+                    <p class="tl-date">2023 – 2025</p>
+                    <h4>MCA — 6.95 CGPA</h4>
+                    <p class="tl-company">Chandigarh University</p>
+                </div>
+                <div class="tl-card edu">
+                    <div class="tl-badge"><i class="fas fa-graduation-cap"></i></div>
+                    <p class="tl-date">2020 – 2023</p>
+                    <h4>B.Voc Software Development — 7.99 CGPA</h4>
+                    <p class="tl-company">Ramanujan College, DU</p>
+                </div>
+                <div class="tl-card edu">
+                    <div class="tl-badge"><i class="fas fa-graduation-cap"></i></div>
+                    <p class="tl-date">2017 – 2019</p>
+                    <h4>Intermediate PCM — 86.8%</h4>
+                    <p class="tl-company">L.S. College</p>
+                </div>
+                <div class="tl-card edu">
+                    <div class="tl-badge"><i class="fas fa-graduation-cap"></i></div>
+                    <p class="tl-date">2016 – 2017</p>
+                    <h4>High School — 80.8%</h4>
+                    <p class="tl-company">S.G.J High School</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/pos.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <p class="project_desc">Pos : Stock and billing management<br> Tech used: React, github, Laravel</p>
-                        <div class="icons">
-                            <a href="https://pos.pythonistindia.com/" target="_blank" class="icon">
-                                <i class="fas fa-link"></i>
-                            </a>
-                         
-                        </div>
-                    </div>
-                </div>
-              
-            </div>
-        </section>
-        <!-- <section class="container" id="blogs">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
-                </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <img src="img/port6.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Create Your Own Website
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Become an Expert in Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Become a Web Designer in 10 Days
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Debbuging made easy with Web Inspector
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Get started with Web Design and UI Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                This is what you need to know about Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
+    <!-- ── PORTFOLIO ── -->
+    <section class="page container" id="portfolio">
+        <div class="section-header">
+            <span class="section-tag">What I've built</span>
+            <h2 class="section-title">My <span>Portfolio</span></h2>
+        </div>
+        <div class="portfolio-grid">
+            <div class="port-card">
+                <div class="port-img"><img src="img/gms.png" alt="GMS"></div>
+                <div class="port-overlay">
+                    <h3>GMS</h3>
+                    <p>Grant management system for publishers</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> TypeScript · Laravel · PostgreSQL · Docker</p>
+                    <a href="https://aisolutions.cactusglobal.com/gms/" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
                 </div>
             </div>
-        </section> -->
-        <section class="container contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
-                </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-  
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>  Sector 49, Noida, India</span> 
-                                </div>
-                               
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>wrttorky@gmail.com </span>
-                                </div>
-                               
-                            </div>
-                           
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                    <span>9661628796</span>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-icon">
-                                <a href="https://www.instagram.com/rkyyadavrupesh/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://twitter.com/RkyRupesh1" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="https://github.com/rupesh9661" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/rupesh-kumar-478618208/" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                
+            <div class="port-card">
+                <div class="port-img"><img src="img/aisolutions.png" alt="AI Solutions"></div>
+                <div class="port-overlay">
+                    <h3>AI Solutions</h3>
+                    <p>Enterprise AI Solutions for Publishers, Funders &amp; Corporates.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> TypeScript · Laravel · PostgreSQL · Docker</p>
+                    <a href="https://aisolutions.cactusglobal.com/dashboard/" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
                 </div>
             </div>
-        </section>
+            <div class="port-card">
+                <div class="port-img"><img src="img/discovery.png" alt="R Discovery"></div>
+                <div class="port-overlay">
+                    <h3>R Discovery</h3>
+                    <p>AI research assistant — search papers &amp; review literature.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> TypeScript · Laravel · PostgreSQL · Elasticsearch</p>
+                    <a href="https://discovery.researcher.life/" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/mm.png" alt="Media Manager"></div>
+                <div class="port-overlay">
+                    <h3>Media Manager</h3>
+                    <p>Video Content Management System.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> React.js · TypeScript · PHP · Laravel · MySQL · Docker · Bdd</p>
+                    <a href="https://media-manager.demo.switch.tv/" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/orafinance.png" alt="Ora Finance"></div>
+                <div class="port-overlay">
+                    <h3>Ora Finance</h3>
+                    <p>NBFC ERP (similar to Bajaj Finance).</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> PHP · AJAX · JavaScript · Laravel · MySQL</p>
+                    <a href="https://los.orafinance.in" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/unnati.png" alt="Unnati ERP"></div>
+                <div class="port-overlay">
+                    <h3>Unnati ERP</h3>
+                    <p>Agritech software management platform.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> PHP · AJAX · JavaScript · Laravel · MySQL</p>
+                    <a href="https://unnati.world/shop/admin/index.php?route=common/login" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/megamart.png" alt="Megamart"></div>
+                <div class="port-overlay">
+                    <h3>Megamart</h3>
+                    <p>Full Stack E-Commerce Platform.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> PHP · AJAX · JavaScript · Laravel · MySQL</p>
+                    <a href="https://megamart.pythonistindia.com" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/aitech.png" alt="Aitech"></div>
+                <div class="port-overlay">
+                    <h3>Aitech</h3>
+                    <p>Multivendor E-Commerce with admin, seller &amp; user dashboards.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> Node.js · Express.js · JWT · MySQL</p>
+                    <a href="https://aitech.com.sa" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/royaltechno.png" alt="RoyalTechno School ERP"></div>
+                <div class="port-overlay">
+                    <h3>RoyalTechno School ERP</h3>
+                    <p>Student, teacher, fee &amp; expense management modules.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> PHP · AJAX · JavaScript · Laravel</p>
+                    <a href="https://admin.royaltechnoschool.com" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/bajar247.png" alt="Bajar247"></div>
+                <div class="port-overlay">
+                    <h3>Bajar247</h3>
+                    <p>Multivendor E-Commerce Platform like Amazon.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> HTML · CSS · JavaScript · Laravel · MySQL </p>
+                    <a href="https://bajar247.com/" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/pos.png" alt="POS"></div>
+                <div class="port-overlay">
+                    <h3>POS System</h3>
+                    <p>Stock &amp; billing management application.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> HTML · CSS · Laravel · JavaScript · MySQL </p>
+                    <a href="https://pos.pythonistindia.com/" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/synergy.jpg" alt="Synergy ERP"></div>
+                <div class="port-overlay">
+                    <h3>Synergy ERP</h3>
+                    <p>Clients &amp; agreement management ERP.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> HTML · CSS · Laravel · JavaScript · jQuery · AJAX · MySQL</p>
+                    <a href="https://synergy.msell.in/" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/ahamali.png" alt="Ahamali"></div>
+                <div class="port-overlay">
+                    <h3>Ahmali</h3>
+                    <p>Warehousing &amp; logistic management system.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> HTML · CSS · Laravel · JavaScript · jQuery · AJAX · MySQL</p>
+                    <a href="https://ahmali.com/" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+            <div class="port-card">
+                <div class="port-img"><img src="img/anwar.png" alt="Anwar"></div>
+                <div class="port-overlay">
+                    <h3>Anwar Alshallal</h3>
+                    <p>Doctor info &amp; appointment booking site.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> HTML · CSS · Laravel · JavaScript · jQuery · AJAX · MySQL</p>
+                    <a href="https://anwar-alshallal.com/" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+
+            <div class="port-card">
+                <div class="port-img"><img src="img/littlediva.png" alt="Little Diva"></div>
+                <div class="port-overlay">
+                    <h3>Little Diva</h3>
+                    <p>Children's clothing e-commerce site.</p>
+                    <p class="port-tech"><i class="fas fa-code"></i> HTML · CSS · Laravel · JavaScript · jQuery · AJAX · MySQL</p>
+                    <a href="https://littlediva.in/" target="_blank" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i> Visit</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="page container" id="contact">
+        <div class="section-header">
+            <span class="section-tag">Get in touch</span>
+            <h2 class="section-title">Contact <span>Me</span></h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Let's build something great together.</h3>
+                <p>I'm currently open to new opportunities. Whether you have a project in mind or just want to say hi — my inbox is always open!</p>
+                <ul class="contact-details">
+                    <li><i class="fas fa-map-marker-alt"></i><span>Sector 49, Noida, India</span></li>
+                    <li><i class="fas fa-envelope"></i><a href="mailto:wrttorky@gmail.com">wrttorky@gmail.com</a></li>
+                    <li><i class="fas fa-phone-alt"></i><a href="tel:9661628796">+91 9661628796</a></li>
+                </ul>
+                <div class="contact-socials">
+                    <a href="https://www.instagram.com/rkyyadavrupesh/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/RkyRupesh1" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/rupesh9661" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rupesh-kumar-478618208/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-inner">
+                    <i class="fas fa-paper-plane plane-icon"></i>
+                    <h4>Available for Freelance &amp; Full-Time</h4>
+                    <p>Full Stack Web Development · API Integration · Server Management</p>
+                    <a href="mailto:wrttorky@gmail.com" class="btn-primary">
+                        <i class="fas fa-envelope"></i> Send me an Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
 
-    <div class="controls">
-        <div class="control active-btn" data-id="home" >
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="control" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
-    </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
